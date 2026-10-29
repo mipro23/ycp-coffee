@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YCP — Specialty Coffee & Eatery | Кофейня на Мясницкой</title>
+  <meta name="description" content="YCP — спешелти кофейня в историческом дворике на Мясницкой 13с21. Авторский кофе (Finca El Diviso), сытные завтраки целый день, уютная атмосфера для работы и встреч. Dog-friendly. Рейтинг 4.9 на Яндекс Картах.">
+  <meta name="keywords" content="кофейня YCP, спешелти кофе Москва, кофе Мясницкая, завтраки Чистые пруды, коворкинг кафе Москва, dog friendly кофейня">
+  <meta name="theme-color" content="#12100E">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="YCP Coffee & Food — Кофейня в тихом дворике Мясницкой">
+  <meta property="og:description" content="Specialty кофе свежей обжарки, завтраки весь день, просторное светлое пространство и dog-friendly атмосфера. Рейтинг 4.9 ⭐️">
+  <meta property="og:image" content="images/ycp_photo_5.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23D97736'/><text x='50%' y='62%' font-size='38' font-weight='900' fill='%23FFFFFF' font-family='sans-serif' text-anchor='middle'>YCP</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Unbounded:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Notification Ribbon -->
+  <div class="top-banner">
+    <div class="container banner-inner">
+      <div class="banner-tag">
+        <span class="badge-award">🏆 «Хорошее место 2026»</span>
+        <span class="banner-rating">⭐️ 4.9 по 800+ отзывам в Яндекс Картах</span>
+      </div>
+      <div class="banner-hours">
+        <span class="status-dot"></span>
+        <span id="liveStatusText">Сегодня открыты до 22:00</span>
+        <span class="banner-divider">|</span>
+        <a href="#contacts" class="banner-link">Мясницкая, 13с21</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="brand-logo" aria-label="YCP Coffee Главная">
+        <span class="logo-text">YCP</span>
+        <span class="logo-sub">Coffee &amp; Kitchen</span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="#about" class="nav-link">О кофейне</a>
+        <a href="#menu" class="nav-link">Меню</a>
+        <a href="#specialty" class="nav-link">Спешелти</a>
+        <a href="#coworking" class="nav-link">Атмосфера</a>
+        <a href="#reviews" class="nav-link">Отзывы</a>
+        <a href="#contacts" class="nav-link">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+79255750577" class="phone-link" title="Позвонить в кофейню">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span class="phone-number">+7 (925) 575-05-77</span>
+        </a>
+        <a href="#booking" class="btn btn-primary btn-sm">Забронировать</a>
+        <button class="burger-btn" id="burgerBtn" aria-label="Открыть мобильное меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-nav">
+        <a href="#about" class="mobile-nav-link">О кофейне</a>
+        <a href="#menu" class="mobile-nav-link">Меню и Завтраки</a>
+        <a href="#specialty" class="mobile-nav-link">Зерно &amp; Спешелти</a>
+        <a href="#coworking" class="mobile-nav-link">Коворкинг &amp; Дворик</a>
+        <a href="#reviews" class="mobile-nav-link">Отзывы гостей</a>
+        <a href="#contacts" class="mobile-nav-link">Как нас найти</a>
+      </nav>
+      <div class="mobile-contacts">
+        <a href="tel:+79255750577" class="mobile-phone">+7 (925) 575-05-77</a>
+        <p class="mobile-address">Мясницкая ул., 13, стр. 21 (м. Тургеневская / Чистые пруды)</p>
+        <div class="mobile-cta-group">
+          <a href="#booking" class="btn btn-primary btn-block">Забронировать стол</a>
+          <a href="https://yandex.ru/maps/org/ycp/157998496135/" target="_blank" rel="noopener" class="btn btn-outline btn-block">Открыть в Яндекс Картах</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge-row">
+          <span class="pill-badge pill-gold">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Награда «Хорошее место 2026»
+          </span>
+          <span class="pill-badge pill-glass">Мясницкая, 13с21</span>
+        </div>
+
+        <h1 class="hero-title">
+          Особое место для тех, кто ценит <span class="text-accent">настоящий кофе</span> и комфорт
+        </h1>
+
+        <p class="hero-subtitle">
+          Specialty кофе свежей фермерской обжарки, сытные завтраки целый день, тихий зеленый дворик в сердце Москвы и просторное пространство, где легко работать и отдыхать.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-accent btn-lg">
+            Посмотреть меню
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#booking" class="btn btn-glass btn-lg">
+            Забронировать столик
+          </a>
+          <a href="https://yandex.ru/maps/org/ycp/157998496135/?ll=37.633616%2C55.763204&z=17" target="_blank" rel="noopener" class="btn btn-icon-round" title="Построить маршрут в Яндекс Картах">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Key Metrics Cards -->
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <div class="stat-num">4.9 ⭐️</div>
+            <div class="stat-label">809 отзывов на Яндекс Картах</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">All Day</div>
+            <div class="stat-label">Завтраки и кухня с утра до вечера</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">Dog 🐾</div>
+            <div class="stat-label">Рады гостям со всеми питомцами</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">Wi-Fi &amp; ⚡️</div>
+            <div class="stat-label">Зона для работы с розетками</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Showcase -->
+      <div class="hero-visual">
+        <div class="hero-image-card main-card">
+          <img src="images/ycp_photo_5.jpg" alt="Интерьер кофейни YCP" class="hero-img">
+          <div class="image-overlay-info">
+            <span class="overlay-tag">Specialty Coffee</span>
+            <span class="overlay-text">Finca El Diviso &amp; авторские воронки V60</span>
+          </div>
+        </div>
+        <div class="hero-floating-card floating-card-top">
+          <div class="float-icon">🥐</div>
+          <div class="float-text">
+            <strong>Комбо-завтрак</strong>
+            <span>750 ₽ каждый день до 12:00</span>
+          </div>
+        </div>
+        <div class="hero-floating-card floating-card-bottom">
+          <div class="float-avatar-group">
+            <img src="images/beans.jpg" alt="Зёрна кофе">
+          </div>
+          <div class="float-text">
+            <strong>100% Арабика</strong>
+            <span>Прямые поставки от проверенных фермеров</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Philosophy Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Философия YCP</span>
+        <h2 class="section-title">Пространство со вкусом, воздухом и уважением к деталям</h2>
+        <p class="section-lead">
+          Мы спрятались от шумной суеты Мясницкой в уютном историческом дворике. Здесь одинаково приятно начать утро с чашки плотного флэт уайта, провести рабочий созвон или собраться с друзьями за бранчем.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-box">☕️</div>
+          <h3 class="feature-title">Бескомпромиссный спешелти</h3>
+          <p class="feature-desc">
+            Варим классику и альтернативу на зерне класса Specialty. В нашем ростере редкие микролоты, такие как <em>Таби с колумбийской фермы Finca El Diviso</em> с нотами малинового варенья, ежевики и тёмного шоколада.
+          </p>
+          <span class="feature-link">Воронка V60, Фильтр, Эспрессо &rarr;</span>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">🍳</div>
+          <h3 class="feature-title">Честная городская кухня</h3>
+          <p class="feature-desc">
+            Никаких полуфабрикатов. Готовим из-под ножа: пышные картофельные драники со слабосоленым лососем, шакшука с ароматным тартином, сырники с земляничным соусом и сочные горячие пасты.
+          </p>
+          <span class="feature-link">Комбо-завтраки и ланчи &rarr;</span>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">💻</div>
+          <h3 class="feature-title">Идеально для работы с ноутбуком</h3>
+          <p class="feature-desc">
+            Мы спроектировали пространство так, чтобы столы не стояли вплотную. Много естественного света из панорамных окон, стабильный Wi-Fi, удобные розетки у посадочных мест и вдохновляющий плейлист.
+          </p>
+          <span class="feature-link">Коворкинг-friendly &rarr;</span>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">🐕</div>
+          <h3 class="feature-title">100% Dog Friendly</h3>
+          <p class="feature-desc">
+            К нам можно и нужно приходить с четвероногими друзьями любого размера. Всегда предложим миску со свежей водой, угощение и самый теплый прием для вашего питомца.
+          </p>
+          <span class="feature-link">Ждем вас и ваших хвостиков &rarr;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Menu Section -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Наше меню</span>
+        <h2 class="section-title">Свежий кофе, выпечка и сытная еда</h2>
+        <p class="section-lead">Завтраки готовим весь день. Все кофейные напитки готовим также на альтернативном молоке (овсяное, кокосовое, миндальное).</p>
+
+        <!-- Menu Tabs -->
+        <div class="menu-tabs" role="tablist">
+          <button class="tab-btn active" data-category="breakfast" role="tab">🍳 Завтраки All-Day</button>
+          <button class="tab-btn" data-category="coffee" role="tab">☕️ Кофе &amp; Напитки</button>
+          <button class="tab-btn" data-category="main" role="tab">🥗 Основные блюда</button>
+          <button class="tab-btn" data-category="desserts" role="tab">🥐 Десерты &amp; Выпечка</button>
+        </div>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menuContainer">
+        <!-- Breakfast Items -->
+        <div class="menu-item" data-category="breakfast">
+          <div class="menu-item-header">
+            <span class="item-badge hot">Специальное предложение</span>
+            <div class="item-title-row">
+              <h4 class="item-name">Комбо-завтрак дня</h4>
+              <span class="item-price">750 ₽</span>
+            </div>
+            <p class="item-desc">Сытный утренний сет: основное блюдо на выбор + свежесваренный фильтр-кофе или капучино. Подается ежедневно до 12:00.</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="breakfast">
+          <div class="menu-item-header">
+            <span class="item-badge bestseller">Хит продаж</span>
+            <div class="item-title-row">
+              <h4 class="item-name">Драники с лососем и яйцами пашот</h4>
+              <span class="item-price">690 ₽</span>
+            </div>
+            <p class="item-desc">Золотистые картофельные драники с хрустящей корочкой, слабосоленый лосось, два нежных яйца пашот и сметанный соус с зеленью.</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="breakfast">
+          <div class="menu-item-header">
+            <span class="item-badge">Любимое гостями</span>
+            <div class="item-title-row">
+              <h4 class="item-name">Сырники с земляникой и сметанным муссом</h4>
+              <span class="item-price">490 ₽</span>
+            </div>
+            <p class="item-desc">Нежнейшие творожные сырники с минимумом муки, ароматное варенье из лесной земляники и взбитый сметанный мусс.</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="breakfast">
+          <div class="menu-item-header">
+            <div class="item-title-row">
+              <h4 class="item-name">Шакшука с томатами и хрустящим тартином</h4>
+              <span class="item-price">540 ₽</span>
+            </div>
+            <p class="item-desc">Томленые томаты с болгарским перцем, восточными пряностями, яйцами и сыром фета. Подается с теплым ремесленным хлебом.</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="breakfast">
+          <div class="menu-item-header">
+            <div class="item-title-row">
+              <h4 class="item-name">Овсяная каша с крем-чиз и пряной грушей</h4>
+              <span class="item-price">420 ₽</span>
+            </div>
+            <p class="item-desc">Цельнозерновые хлопья на обычном или кокосовом молоке с карамелизированной коричной грушей и сырным кремом.</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="breakfast">
+          <div class="menu-item-header">
+            <div class="item-title-row">
+              <h4 class="item-name">Омлет с вешенками и крем-чиз</h4>
+              <span class="item-price">520 ₽</span>
+            </div>
+            <p class="item-desc">Воздушный французский омлет, обжаренные лесные вешенки, соус крем-чиз и микрозелень. Дополнительно можно добавить тигровые креветки (+180 ₽).</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="breakfast">
+          <div class="menu-item-header">
+            <span class="item-badge">Полезно</span>
+            <div class="item-title-row">
+              <h4 class="item-name">Авокадо тост с хумусом и маринованным бататом</h4>
+              <span class="item-price">590 ₽</span>
+            </div>
+            <p class="item-desc">Хрустящий тартин на закваске, домашний шелковистый хумус, спелый авокадо, печеный батат, тыквенные семечки и масло трав.</p>
+          </div>
+        </div>
+
+        <!-- Coffee Items -->
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-item-header">
+            <span class="item-badge specialty">Specialty Lot</span>
+            <div class="item-title-row">
+              <h4 class="item-name">Воронка V60 / Фильтр Finca El Diviso (Таби)</h4>
+              <span class="item-price">380 ₽</span>
+            </div>
+            <p class="item-desc">Колумбия, анаэробная ферментация. В чашке яркая кислотность, малина, ежевика и глубокий тёмный шоколад.</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-item-header">
+            <span class="item-badge bestseller">Выбор гостей</span>
+            <div class="item-title-row">
+              <h4 class="item-name">Флэт Уайт (Flat White)</h4>
+              <span class="item-price">320 ₽</span>
+            </div>
+            <p class="item-desc">Двойной шот спешелти эспрессо с бархатистой текстурой молока. Идеально раскрывается на овсяном молоке.</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-item-header">
+            <div class="item-title-row">
+              <h4 class="item-name">Фильтр-кофе (Batch Brew)</h4>
+              <span class="item-price">250 ₽</span>
+            </div>
+            <p class="item-desc">Ежедневный гостевой лот арабики из Эфиопии или Кении. Чистый, сочный и сбалансированный вкус.</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-item-header">
+            <div class="item-title-row">
+              <h4 class="item-name">Капучино / Латте</h4>
+              <span class="item-price">290 / 330 ₽</span>
+            </div>
+            <p class="item-desc">Классика в эталонном исполнении. Выбор размера (200 / 350 мл) и молока (цельное, безлактозное, овсяное, кокосовое, миндальное).</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-item-header">
+            <div class="item-title-row">
+              <h4 class="item-name">Раф сливочный ванильный / цитрусовый</h4>
+              <span class="item-price">360 ₽</span>
+            </div>
+            <p class="item-desc">Нежный десертный кофе на натуральных сливках с добавлением натуральной бурбонской ванили или цедры апельсина.</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-item-header">
+            <span class="item-badge">Без кофеина</span>
+            <div class="item-title-row">
+              <h4 class="item-name">Церемониальная Матча Латте</h4>
+              <span class="item-price">350 ₽</span>
+            </div>
+            <p class="item-desc">Премиальный японский чай сорта Удзи, взбитый с шелковистым молоком. Мягкая природная энергия без резких спадов.</p>
+          </div>
+        </div>
+
+        <!-- Main dishes -->
+        <div class="menu-item" data-category="main">
+          <div class="menu-item-header">
+            <span class="item-badge bestseller">Шеф-рецепт</span>
+            <div class="item-title-row">
+              <h4 class="item-name">Паста с лососем и сливочно-устричным соусом</h4>
+              <span class="item-price">720 ₽</span>
+            </div>
+            <p class="item-desc">Паста аль-денте, филе лосося слабой прожарки, густой сливочный соус с устричными нотами, вяленые томаты и пармезан.</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="main">
+          <div class="menu-item-header">
+            <div class="item-title-row">
+              <h4 class="item-name">Филе цыпленка с нежным картофельным пюре</h4>
+              <span class="item-price">620 ₽</span>
+            </div>
+            <p class="item-desc">Сочная куриная грудка су-вид, обжаренная до золотистого колера, сливочное пюре и легкий мясной демигляс с травами.</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="main">
+          <div class="menu-item-header">
+            <span class="item-badge">Green &amp; Fit</span>
+            <div class="item-title-row">
+              <h4 class="item-name">Зеленая гречка с пармезаном и яйцом пашот</h4>
+              <span class="item-price">480 ₽</span>
+            </div>
+            <p class="item-desc">Томленая зеленая гречневая крупа со шпинатом, авокадо, вялеными маслинами, выдержанным сыром и яйцом пашот.</p>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-item" data-category="desserts">
+          <div class="menu-item-header">
+            <span class="item-badge bestseller">Особая рекомендация</span>
+            <div class="item-title-row">
+              <h4 class="item-name">Яблочный крамбл с пломбиром</h4>
+              <span class="item-price">430 ₽</span>
+            </div>
+            <p class="item-desc">Печеные яблоки с карамелью и корицей под хрустящей миндально-песочной крошкой, шарик сливочного пломбира.</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="desserts">
+          <div class="menu-item-header">
+            <div class="item-title-row">
+              <h4 class="item-name">Морковный кекс с апельсином и орехами</h4>
+              <span class="item-price">340 ₽</span>
+            </div>
+            <p class="item-desc">Пряный влажный бисквит с добавлением свежего апельсина, грецких орехов и шапочкой из нежного сырного крема.</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="desserts">
+          <div class="menu-item-header">
+            <div class="item-title-row">
+              <h4 class="item-name">Французский масляный круассан</h4>
+              <span class="item-price">220 ₽</span>
+            </div>
+            <p class="item-desc">Свежеиспеченный слоеный круассан с хрустящими слоями и сливочным ароматом. Идеален к утренней чашке капучино.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-footer-banner">
+        <div class="banner-text-box">
+          <h4>Хотите забрать кофе или завтрак навынос?</h4>
+          <p>Позвоните нам за 10 минут — упакуем к вашему приходу без очередей.</p>
+        </div>
+        <a href="tel:+79255750577" class="btn btn-accent btn-md">Позвонить: +7 (925) 575-05-77</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Coffee Beans & Specialty Section -->
+  <section class="section specialty-section" id="specialty">
+    <div class="container">
+      <div class="specialty-card-layout">
+        <div class="specialty-text">
+          <span class="section-tag">Наш флагманский лот</span>
+          <h2 class="section-title">Таби · Ферма Finca El Diviso (Колумбия)</h2>
+          <p class="specialty-desc">
+            Малиновое варенье, спелая ежевика и тёмный бархатный шоколад — это не сладкий десерт, а природные вкусовые дескрипторы нашего уникального микролота Таби с легендарной колумбийской фермы Finca El Diviso.
+          </p>
+
+          <div class="flavor-descriptors">
+            <div class="descriptor-pill">
+              <span class="dot-red"></span> Малиновое варенье
+            </div>
+            <div class="descriptor-pill">
+              <span class="dot-purple"></span> Лесная ежевика
+            </div>
+            <div class="descriptor-pill">
+              <span class="dot-brown"></span> Тёмный шоколад
+            </div>
+            <div class="descriptor-pill">
+              <span class="dot-orange"></span> Яркая цитрусовая кислотность
+            </div>
+          </div>
+
+          <div class="specialty-specs-grid">
+            <div class="spec-item">
+              <span class="spec-label">Разновидность:</span>
+              <span class="spec-val">Таби (Tabi)</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Обработка:</span>
+              <span class="spec-val">Анаэробная натуральная</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Высота произрастания:</span>
+              <span class="spec-val">1 750 – 1 850 м</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Способ заваривания:</span>
+              <span class="spec-val">V60 / Фильтр / Аэропресс</span>
+            </div>
+          </div>
+
+          <div class="specialty-action">
+            <a href="#booking" class="btn btn-accent">Попробовать в YCP</a>
+            <span class="takeaway-note">Зерно также доступно в пачках 250 г для дома</span>
+          </div>
+        </div>
+
+        <div class="specialty-image-wrapper">
+          <img src="images/beans.jpg" alt="Зёрна кофе Finca El Diviso" class="specialty-img">
+          <div class="roaster-badge">
+            <span class="badge-title">Q-Grader Score</span>
+            <span class="badge-score">87.5+</span>
+            <span class="badge-sub">Micro-Lot Colombia</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coffee Taste Matcher Interactive Tool -->
+      <div class="taste-matcher-box">
+        <div class="matcher-header">
+          <h3>☕️ Подберите свой идеальный кофе в YCP за пару кликов</h3>
+          <p>Выберите свои вкусовые предпочтения, и мы подскажем идеальный напиток</p>
+        </div>
+
+        <div class="matcher-selectors">
+          <div class="selector-group">
+            <label>1. Какой вкус вы предпочитаете?</label>
+            <div class="choice-pills" id="flavorChoice">
+              <button class="choice-btn active" data-flavor="fruit">Ягодный &amp; Сладкий</button>
+              <button class="choice-btn" data-flavor="chocolate">Шоколадный &amp; Ореховый</button>
+              <button class="choice-btn" data-flavor="milk">Нежный &amp; Сливочный</button>
+              <button class="choice-btn" data-flavor="clean">Чистый &amp; Кислотный</button>
+            </div>
+          </div>
+
+          <div class="selector-group">
+            <label>2. Крепость и плотность напитка:</label>
+            <div class="choice-pills" id="strengthChoice">
+              <button class="choice-btn active" data-strength="medium">Сбалансированная</button>
+              <button class="choice-btn" data-strength="light">Легкая и сочная</button>
+              <button class="choice-btn" data-strength="bold">Плотная и терпкая</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="matcher-result" id="matcherResult">
+          <div class="result-badge">Ваш выбор:</div>
+          <div class="result-title" id="recDrinkTitle">Воронка V60 Finca El Diviso</div>
+          <div class="result-desc" id="recDrinkDesc">Глубокие ягодные ноты ежевики, сочная малина и карамельное послевкусие. Идеально раскрывается в теплом виде.</div>
+          <a href="#menu" class="btn btn-outline btn-sm">Найти в меню</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Atmosphere, Coworking & Courtyard Section -->
+  <section class="section space-section" id="coworking">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Пространство &amp; Дворик</span>
+        <h2 class="section-title">Атмосфера, куда приятно возвращаться</h2>
+        <p class="section-lead">Просторные залы, большие окна, много зелени и защищенный от городского шума внутренний двор.</p>
+      </div>
+
+      <div class="space-gallery-grid">
+        <div class="gallery-col-large">
+          <div class="gallery-card">
+            <img src="images/interior.jpg" alt="Интерьер кофейни YCP" class="gallery-img">
+            <div class="gallery-caption">
+              <h4>Простор между столами</h4>
+              <p>Много воздуха, естественный свет и комфортная посадка без суеты.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-col-small">
+          <div class="gallery-card">
+            <img src="images/entrance.jpg" alt="Вход в кофейню YCP во дворике" class="gallery-img">
+            <div class="gallery-caption">
+              <h4>Тихий дворик на Мясницкой</h4>
+              <p>Зеленая зона со столиками на свежем воздухе в теплое время года.</p>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <img src="images/ycp_photo_8.jpg" alt="Уютные столики для работы" class="gallery-img">
+            <div class="gallery-caption">
+              <h4>Комфорт для ноутбука</h4>
+              <p>Высокоскоростной Wi-Fi и розетки у столиков для продуктивной работы.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Amenities Highlights Bar -->
+      <div class="amenities-row">
+        <div class="amenity-item">
+          <div class="amenity-icon">⚡️</div>
+          <div class="amenity-info">
+            <strong>Розетки у столов</strong>
+            <span>Удобно заряжать ноутбук и гаджеты</span>
+          </div>
+        </div>
+
+        <div class="amenity-item">
+          <div class="amenity-icon">📶</div>
+          <div class="amenity-info">
+            <strong>Быстрый Wi-Fi</strong>
+            <span>Стабильная связь для звонков и зумов</span>
+          </div>
+        </div>
+
+        <div class="amenity-item">
+          <div class="amenity-icon">🐶</div>
+          <div class="amenity-info">
+            <strong>Pet-Friendly</strong>
+            <span>Миски с чистой водой для ваших собак</span>
+          </div>
+        </div>
+
+        <div class="amenity-item">
+          <div class="amenity-icon">♿️</div>
+          <div class="amenity-info">
+            <strong>Доступная среда</strong>
+            <span>Удобный доступ для всех гостей</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Reviews Section (From Yandex Maps) -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="reviews-header-block">
+        <div>
+          <span class="section-tag">Живые отзывы</span>
+          <h2 class="section-title">Что говорят гости о YCP</h2>
+        </div>
+        <div class="yandex-rating-badge">
+          <div class="rating-stars">★★★★★</div>
+          <div class="rating-score"><strong>4.9</strong> / 5.0</div>
+          <div class="rating-source">809 отзывов на Яндекс Картах</div>
+          <a href="https://yandex.ru/maps/org/ycp/157998496135/" target="_blank" rel="noopener" class="yandex-link">
+            Читать все отзывы на Картах &rarr;
+          </a>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar">А</div>
+            <div class="reviewer-info">
+              <span class="reviewer-name">Александр К.</span>
+              <span class="reviewer-date">Знаток города · Октябрь 2026</span>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">
+            «Отличная кофейня с завтраками! Кофе потрясающий: насыщенный, плотный и терпкий. Флэт уайт и американо очень понравились. Брали зеленую гречку и омлет, а морковный кекс с апельсином — просто восторг. Место однозначно рекомендую!»
+          </p>
+          <div class="review-tag">Заказывал: Флэт уайт, Морковный кекс</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar">Д</div>
+            <div class="reviewer-info">
+              <span class="reviewer-name">Дарья М.</span>
+              <span class="reviewer-date">Частый гость · Октябрь 2026</span>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">
+            «Первое, что бросилось в глаза — реальный простор. Много места между столиками, можно спокойно сесть поработать с ноутом или встретиться с подругой. Драники с лососем и шакшука топ! Очень уютно и приятно, вернусь обязательно.»
+          </p>
+          <div class="review-tag">Заказывала: Драники с лососем, Шакшука</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar">М</div>
+            <div class="reviewer-info">
+              <span class="reviewer-name">Максим С.</span>
+              <span class="reviewer-date">Любитель спешелти · Сентябрь 2026</span>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">
+            «Что я люблю в этом месте? Дышится легко, и кофе варят без лишних выкрутасов — просто идеально. Взял яблочный крамбл с пломбиром — кайф, нежно и сытно. Флэт Уайт на овсянке без единой ошибки. Команда за стойкой приветливая, спасибо за настроение!»
+          </p>
+          <div class="review-tag">Заказывал: Яблочный крамбл, Флэт на овсянке</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Table Booking / Inquiry Section -->
+  <section class="section booking-section" id="booking">
+    <div class="container">
+      <div class="booking-box">
+        <div class="booking-text">
+          <span class="section-tag tag-light">Бронирование и предзаказ</span>
+          <h2 class="booking-title">Забронируйте любимый столик или оформите кофе навынос</h2>
+          <p class="booking-desc">
+            Собираетесь поработать, провести встречу или прийти большой компанией? Оставьте контакты — мы подготовим для вас столик или заранее приготовим любимый напиток.
+          </p>
+          <ul class="booking-perks">
+            <li>✓ Бесплатное подтверждение по WhatsApp / Telegram</li>
+            <li>✓ Возможность выбрать тихую зону для созвонов</li>
+            <li>✓ Специальные условия для встреч с питомцами</li>
+          </ul>
+        </div>
+
+        <div class="booking-form-card">
+          <form id="bookingForm" class="booking-form">
+            <div class="form-group">
+              <label for="bName">Ваше имя</label>
+              <input type="text" id="bName" placeholder="Например, Анна" required>
+            </div>
+
+            <div class="form-group">
+              <label for="bPhone">Номер телефона</label>
+              <input type="tel" id="bPhone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bDate">Дата</label>
+                <input type="date" id="bDate" required>
+              </div>
+              <div class="form-group">
+                <label for="bTime">Время</label>
+                <select id="bTime" required>
+                  <option value="10:00">10:00 (Утренний кофе)</option>
+                  <option value="12:00">12:00 (Бранч / Ланч)</option>
+                  <option value="14:00">14:00 (Рабочие часы)</option>
+                  <option value="16:00">16:00 (Послеобеденный)</option>
+                  <option value="18:00">18:00 (Вечерняя встреча)</option>
+                  <option value="20:00">20:00 (Ужин)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="bGuests">Количество гостей и пожелания</label>
+              <select id="bGuests">
+                <option value="1">1 человек (буду работать с ноутбуком)</option>
+                <option value="2" selected>2 человека (встреча / свидание)</option>
+                <option value="3-4">3–4 человека (небольшая компания)</option>
+                <option value="5+">5+ человек (большой стол)</option>
+                <option value="dog">Приду с собакой 🐾</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-accent btn-block btn-lg" id="submitBookingBtn">
+              Отправить заявку
+            </button>
+            <p class="form-privacy">
+              Нажимая кнопку, вы соглашаетесь на обработку персональных данных. Менеджер свяжется с вами в течение 5 минут.
+            </p>
+          </form>
+
+          <!-- Success Alert Placeholder -->
+          <div class="booking-success" id="bookingSuccess" style="display: none;">
+            <div class="success-icon">✓</div>
+            <h4>Спасибо! Заявка принята</h4>
+            <p>Мы забронировали время и свяжемся с вами по указанному номеру для подтверждения.</p>
+            <button class="btn btn-outline btn-sm" id="resetBookingBtn">Отправить еще одну</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts, Location & Route Instructions -->
+  <section class="section contacts-section" id="contacts">
+    <div class="container">
+      <div class="contacts-grid">
+        <div class="contacts-info-card">
+          <span class="section-tag">Как нас найти</span>
+          <h2 class="section-title">Ждём вас в гости на Мясницкой</h2>
+          <p class="contacts-lead">
+            Кофейня расположена во внутреннем дворике дома 13 по улице Мясницкой. Здесь нет шума магистрали — только уютная атмосфера старой Москвы.
+          </p>
+
+          <div class="contact-details-list">
+            <div class="contact-item">
+              <div class="c-icon">📍</div>
+              <div class="c-text">
+                <strong>Адрес:</strong>
+                <span>Москва, ул. Мясницкая, 13, стр. 21</span>
+                <span class="sub-note">(вход через арку с Мясницкой во дворик)</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="c-icon">🚇</div>
+              <div class="c-text">
+                <strong>Ближайшие станции метро:</strong>
+                <div class="metro-pills">
+                  <span class="metro-badge m-red">Чистые пруды (4 мин)</span>
+                  <span class="metro-badge m-orange">Тургеневская (4 мин)</span>
+                  <span class="metro-badge m-green">Сретенский бульвар (5 мин)</span>
+                  <span class="metro-badge m-red">Лубянка (7 мин)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="c-icon">⏰</div>
+              <div class="c-text">
+                <strong>Часы работы:</strong>
+                <span>Понедельник — Пятница: 09:00 — 22:00</span>
+                <span>Суббота — Воскресенье: 10:00 — 22:00</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="c-icon">📞</div>
+              <div class="c-text">
+                <strong>Телефон для справок и предзаказа:</strong>
+                <a href="tel:+79255750577" class="c-phone">+7 (925) 575-05-77</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="quick-route-actions">
+            <a href="https://yandex.ru/maps/org/ycp/157998496135/?ll=37.633616%2C55.763204&z=17" target="_blank" rel="noopener" class="btn btn-accent btn-md">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+              Открыть в Яндекс Картах
+            </a>
+            <a href="https://2gis.ru/moscow/search/Мясницкая%2013с21" target="_blank" rel="noopener" class="btn btn-outline btn-md">
+              Открыть в 2ГИС
+            </a>
+          </div>
+        </div>
+
+        <!-- Embedded Interactive Map Card -->
+        <div class="map-embed-card">
+          <div class="map-container">
+            <iframe 
+              src="https://yandex.ru/map-widget/v1/?ll=37.633616%2C55.763204&z=17&pt=37.633616,55.763204,pm2rdm" 
+              width="100%" 
+              height="100%" 
+              frameborder="0" 
+              allowfullscreen="true" 
+              title="Интерактивная карта расположения YCP">
+            </iframe>
+          </div>
+          <div class="map-card-footer">
+            <span class="yandex-verified-badge">✓ Проверено на Яндекс Картах</span>
+            <span>Координаты: 55.763204, 37.633616</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand-col">
+        <a href="#" class="brand-logo footer-logo">
+          <span class="logo-text">YCP</span>
+          <span class="logo-sub">Coffee &amp; Kitchen · Moscow</span>
+        </a>
+        <p class="footer-tagline">
+          Кофейня третьей волны, завтраки весь день и тихое место силы в сердце Мясницкой.
+        </p>
+        <div class="footer-award-badge">
+          🏆 Победитель награды «Хорошее место — 2026»
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h5 class="footer-heading">Навигация</h5>
+        <ul class="footer-nav">
+          <li><a href="#about">О концепции</a></li>
+          <li><a href="#menu">Меню и цены</a></li>
+          <li><a href="#specialty">Спешелти зёрна</a></li>
+          <li><a href="#coworking">Коворкинг и Дворик</a></li>
+          <li><a href="#reviews">Отзывы гостей</a></li>
+          <li><a href="#booking">Бронь столика</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h5 class="footer-heading">Локация</h5>
+        <p class="footer-info-text">
+          Москва, Мясницкая ул., 13, стр. 21<br>
+          м. Тургеневская / Чистые пруды / Лубянка
+        </p>
+        <h5 class="footer-heading" style="margin-top: 15px;">Время работы</h5>
+        <p class="footer-info-text">
+          Пн–Пт: 09:00 — 22:00<br>
+          Сб–Вс: 10:00 — 22:00
+        </p>
+      </div>
+
+      <div class="footer-contacts-col">
+        <h5 class="footer-heading">Связь с нами</h5>
+        <a href="tel:+79255750577" class="footer-phone">+7 (925) 575-05-77</a>
+        <p class="footer-info-text" style="margin-top: 8px;">
+          Звонки, резерв столиков, предзаказ кофе навынос
+        </p>
+        <div class="footer-social-row">
+          <a href="https://yandex.ru/maps/org/ycp/157998496135/" target="_blank" rel="noopener" class="social-pill">
+            Яндекс Карты (4.9 ⭐️)
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 YCP Coffee &amp; Kitchen. Все права защищены.</p>
+        <p class="developer-credit">Премиальный сайт разработан специально для кофейни YCP</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Sticky Action Button (Mobile) -->
+  <div class="floating-mobile-bar" id="mobileActionBar">
+    <a href="#menu" class="mobile-action-btn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h7"/></svg>
+      Меню
+    </a>
+    <a href="tel:+79255750577" class="mobile-action-btn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Позвонить
+    </a>
+    <a href="#booking" class="mobile-action-btn mobile-action-primary">
+      Бронь столика
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
